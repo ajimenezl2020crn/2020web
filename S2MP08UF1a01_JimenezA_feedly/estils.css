@@ -1,3 +1,7 @@
+html{
+  font-size: 16px;
+}
+
 body{
   background-color: skyblue;
   margin: 0;
@@ -6,17 +10,19 @@ body{
 
 div{
   background-color: red;
-  height: 100px;
+  height: 3.125rem;
+
   background-repeat: no-repeat;
-  background-position: 400px;
+  background-position: 25rem;
 }
 
-li{ display: inline-block;
+li{
+  display: inline-block;
   background-color: #CCC;
-  height: 30px;
+  height: 1.875rem;
   margin: 0;
-  line-height: 30px;
-  padding: 5px;
+  line-height: 2.19rem;
+  padding: 0.3125rem;
 }
 
 li:hover {
@@ -24,21 +30,24 @@ li:hover {
 }
 
 h1, p{
-  width: 350px;
-  padding: 25px;
+  width: 21.875rem;
+  padding: 1.5625rem;
+  background-color: ;
+
 }
 
 h1{
   margin: 0;
+  font-size: 2.3rem;
 }
 
 p{
-  padding: 0 25px;
+  padding: 0 1.5625rem;
   margin: 0;
 }
 
 img{
-  padding: 25px;
+  padding: 1.5625rem;
 }
 
 a{
@@ -47,65 +56,65 @@ a{
 }
 
 #primera{
-  height: 40px;
+  height: 2.5rem;
 }
 
 #segona{
-  height: 550px;
+  height: 34.375rem;
   background-image:url(img/img-hero-full-list.png);
 }
 
 #tercera{
-  height: 641px;
+  height: 40.0625rem;
   background-image:url(img/allinone.jpg);
 }
 
 #quarta{
-  height: 500px;
+  height: 31.25rem;
   background-image:url(img/curator-short.png);
 }
 
 #cinquena{
-  height: 550px;
+  height: 34.375rem;
   background-image:url(img/img-hero-full-list.png);
 }
 
 #sisena{
-  height: 550px;
+  height: 34.375rem;
   background-image:url(img/mobile-home.png);
 }
 
 #setena{
-  height: 643px;
+  height: 40.1875rem;
   background-image:url(img/anywhere.png);
 }
 
 #vuitena{
-  height: 200px;
+  height: 12.5rem;
   text-align: center;
 }
 
 #boto{
   /*--dimensions--*/
-  height: 70px;
-  width: 70px;
+  height: 4.375rem;
+  width: 4.375rem;
 
   /*--posicionament--*/
   position: fixed;
-  bottom: 50px;
-  right: 100px;
+  bottom: 3.125rem;
+  right: 6.25rem;
 
   /*--text--*/
   text-align: center;
-  line-height: 90px;
-  font-size: 50px;
+  line-height: 5.625rem;
+  font-size: 3.125rem;
   color: white;
 
   /*--caixa--*/
-  border-radius: 35px;
-  box-shadow: 3px 3px 6px black;
+  border-radius: 2.1875rem;
+  box-shadow: 0.1875rem 0.1875rem 0.375rem black;
   background-color: #CCC;
-  background-position: -225px -15px;
+  background-position: -14.0625rem -0.9375rem;
   opacity: 0.7;
 }
 
@@ -123,4 +132,145 @@ a{
 
 .clara{
   background-color: #EEECEE;
+
+}
+/*-----disseny pantalla  (mòbil)-----*/
+@media screen and (max-width:960px)
+{
+
+  div{
+    background-image: none;
+  }
+
+  li{
+    display: block;
+    background-color: #CCC;
+    height: 1.875rem;
+    margin: 0;
+    margin-left: -2.5rem;
+    line-height: 1.875rem;
+    padding: 0.3125rem;
+  }
+
+  li:hover {
+    background-color: #90EE90;
+  }
+
+  #primera{
+    height: 16.875rem;
+  }
+
+  #boto{
+    margin-right: -5rem;
+    margin-bottom: -1rem;
+  }
+  h1, p{
+    width: 20rem;
+    padding: 1.5625rem;
+    background-color: ;
+
+  }
+
+  .verda{
+    background-color: #ADF2F2;
+  }
+ /*-----Apunts---
+ font-size:
+ Absolutes
+ mm
+ cm
+ pt
+ px
+
+ Relatives
+ % --- sobre el valor en el que s'insereix
+ em---en el cos que etsem fent servir ka mesura M
+ rem
+
+ ex: cos pàg: 16 px; 1quadratí=16px, 2 quadratins=32px.
+ En una pantalla d'ordinador el tamany per defecteés de 16px (em=16px). Es pot cambiar, 2em=32px...
+
+ rem: mida invariable: mida definida a l'inici.
+-----*/
+
+
+/*-----disseny per imprimir----*/
+
+@media print {
+
+  body{
+    width: 210mm;
+    height: 297mm;
+    background-color:white;
+    margin-top: 30mm;
+    margin-left:15mm;
+
+  }
+
+
+  div{
+    width: 95mm;
+    float:left;
+    margin: 0;
+  }
+
+  h1{
+    font-size: 16pt;
+    margin: 0px;
+  }
+
+  p{
+    margin:0;
+    font-size: 16pt;
+  }
+
+  #primera{
+    display: none;
+    height: 0;
+      }
+
+  #segona{
+    height: 80mm;
+    width: 50mm;
+  }
+
+  #tercera{
+    height: 80mm;
+    width: 50mm;
+  }
+
+  #quarta{
+    height: 80mm;
+  }
+
+  #cinquena{
+    height: 80mm;
+  }
+
+  #sisena{
+    height: 80mm;
+  }
+
+  #setena{
+    height: 80mm;
+  }
+
+  #vuitena{
+    display: none;
+    height: 0;
+  }
+
+  #boto{
+    display: none;
+    height: 0;
+  }
+
+  .blanca{
+    background-color: yellow;
+  }
+
+  .verda{
+    background-color: #DEB8EE;
+  }
+
 }
