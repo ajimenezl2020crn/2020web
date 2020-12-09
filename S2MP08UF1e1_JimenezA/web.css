@@ -1,0 +1,167 @@
+
+html{
+  background-color: #222;
+  font-family: helvetica;
+}
+
+  b{
+  width: 175px;
+  height: auto;
+  border-radius: 5px;
+  margin-right: 20px;
+  float: left;
+}
+
+.cap{
+  height: 50px;
+  color: #CCC;
+  text-decoration: none;
+  background-color: black;
+}
+a :hover{
+  color: #FFF;
+  text-decoration: underline;
+
+
+}
+ul{
+float: left;
+text-decoration: none;
+color: #CCC;
+
+}
+li{
+  text-decoration: none;
+}
+
+.xarxa{
+  float: right;
+  margin-right: 10px;
+  text-decoration: none;
+  line-height: 50px;
+  text-align: right;
+}
+
+.cap{
+  position: fixed;
+  width: 100%;
+  margin-left: 0;
+  margin-top: 0;
+
+}
+.logo{
+  width: 49px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-right: 40px;
+  margin-left: 10px;
+  float: left;
+
+}
+a{
+  text-decoration: none;
+  color: #CCC;
+  margin-right: 5px;
+}
+
+h2{
+  font-size: 14px;
+  color: #CCC;
+}
+
+h1{
+  font-size: 22px;
+  color: #FFF;
+  text-align: left;
+  clear: both;
+}
+
+h4 {
+  font-size: 11px;
+  color: #CCC;
+
+  text-align: right;
+  float: right;
+}
+h3 {
+  font-size: 11px;
+  color: #CCC;
+  text-align: left;
+  float: left;
+}
+
+img{
+  width: 175px;
+  height: auto;
+  margin-top: 20px;
+  border-radius: 5px;
+
+
+}
+img :hover{
+  opacity: 0.5;
+}
+
+.visto{
+  filter: grayscale(100%);
+}
+
+.cap{
+  opacity: 0.5;
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+
+#capcelera{
+  margin-left: 0px;
+  margin-top: 0px;
+  margin-bottom: 30px,
+}
+
+.espai{
+  padding-top: 70px;
+}
+
+@media only screen and (max-width: 640px) {
+  h2{
+    font-size: 0.875rem;
+  }
+
+  h1{
+    font-size: 1.375rem;
+  }
+
+
+  h4 {
+    font-size: 0.6875rem;
+  }
+
+  h3 {
+    font-size: 0.6875rem;
+    width: 43%;
+    height: auto;
+    border-radius: 0.3125rem;
+    margin-right: 20px;
+    }
+
+    .cap{
+    height: 50px;
+    }
+
+    .logo{
+    width: 3.0625rem;
+    margin-top: 0.3125rem;
+    margin-bottom: 0.3125rem;
+    margin-right: 2,5rem;
+    margin-left: 0.625rem;
+    }
+
+    a{
+    margin-right: 0.3125rem;
+    }
+
+    html
+    {
+      background-color: white;
+    }
+}
