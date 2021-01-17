@@ -4,41 +4,116 @@
     <meta charset="utf-8">
     <title></title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
+
     <link href="https://fonts.googleapis.com/css2?family=Exo:wght@400;500&display=swap" rel="stylesheet">
+
+      <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+
+
     <style media="screen">
 
-      body{
+      body {
         font-family: 'Exo', sans-serif;
         text-align: center;
-        background-image: url(img/fonsindex.jpg);
-        line-height: 12rem;
-        font-size: 2rem;
-        color:white;
-        font-family: 'Exo', sans-serif;
-        text-shadow:
-        		0 0 5px rgba(0,178,255,1),
-        		0 0 10px rgba(0,178,255,1),
-        		0 0 20px rgba(0,178,255,1),
-        		0 0 40px rgba(38,104,127,1),
-        		0 0 80px rgba(38,104,127,1),
-        		0 0 90px rgba(38,104,127,1),
-        		0 0 100px rgba(38,104,127,1),
-        		0 0 140px rgba(38,104,127,1),
-        		0 0 180px rgba(38,104,127,1);
+        min-height: 100vh;
+
+      }
+
+      div:hover {
+        width: 12rem;
+        height: 12rem;
+        background: #3aafa9;
+        border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+        animation-name: fonsanimat;
+        animation-duration: 2s;
+        animation-timing-function: ease;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+      }
+
+      @keyframes fonsanimat {
+        0% {
+          border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+          width: 12rem;
+          height: 12rem;
+      }
+        100% {
+          border-radius: 68% 32% 42% 58% / 53% 56% 44% 47%;
+          width: 12rem;
+          height: 12rem;
+      }
       }
 
       li{
-        display: block;
+        border-radius:50%;
+        width: 10rem;
+        height: 10rem;
+        margin-top: 0.5rem
+        position: relative;
+        background-color:black ;
+        color:white;
+        position: relative;
+        text-align: center;
+        line-height: 10rem;
+        font-size: 1.5rem;
+        text-decoration: none;
+        box-shadow:7px 5px 6px #3aafa9;
+      }
+
+      li:hover{
+        color:transparent;
+        filter: grayscale(100%);
+        -webkit-filter: grayscale(100%);
+        -moz-filter: grayscale(100%);
+        -ms-filter: grayscale(100%);
+        -o-filter: grayscale(100%);
+        box-shadow: 7px 5px 6px transparent;
+      }
+
+      body{
+        background-color: black;
+        background-image: url(img/fondo2.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+      }
+
+      div{
+        position: relative;
+        display: inline-block;
+        box-shadow: 2px #3aafa9;
         width: 12rem;
         height: 12rem;
-        margin: 1rem;
-        border-radius: 6rem;
-        background-color: black;
-        color:white;
-        box-shadow:
-          5px 5px 5px skyblue;
-        float:left;
+      }
 
+
+      a{
+        margin: 1rem;
+        background-color:;
+        display: inline-block;
+        float: left;
+        text-decoration: none;
+      }
+
+      h1{
+        color:white;
+        font-size:6rem;
+        letter-spacing:1rem;
+        position: relative;
+        font-weight:lighter;
+        margin-top: 2rem;
+        text-shadow: 5px 0 #3aafa9;
+      }
+
+      h2{
+        margin-top: -4rem;
+        margin-bottom: 4rem;
+        font-size: 2rem;
+        color: white;
+        letter-spacing: 0.5rem;
+        text-align: center;
+        font-weight:lighter;
 
       }
 
@@ -46,6 +121,7 @@
         background-image: url(img/a00.png);
         background-size: cover;
       }
+
       #a01:hover{
         background-image: url(img/a01.png);
         background-size: cover;
@@ -96,58 +172,114 @@
         background-size: cover;
       }
       #b07:hover{
-        background-image: url(img/b07.png);
+        background-image: url(img/b07.jpg);
         background-size: cover;
       }
+
+      ul{
+        list-style: none;
+
+      }
+
     </style>
-
   </head>
+
+
   <body>
+
+    <h1 class="rosa">ACTIVITATS</h1>
+    <h2>Curs 20-21</h2>
+
+
     <ul>
-    <a  href="S2MP08UF1a00_JimenezA_inici/horari.html">
-      <li id="a00">Inici</li>
-    </a>
-    <a  href="S2MP08UF1a01_JimenezA_feedly/index.html">
-      <li id="a01">Feedly</li>
-    </a>
-    <a href="S2MP08UF1a02_JimenezA_floats/float.html">
-      <li id="a02a" >Floats</li>
-    </a>
-    <a href="S2MP08UF1a02_JimenezA_floats/float2.html">
-      <li id="a02b">Floats2</li>
-    </a>
-    <a href="S2MP08UF1a02_JimenezA_floats/float3.html">
-      <li id="a02c">Floats3</li>
-    </a>
-    <a href="S2MP08UF1a03_JimenezA_escacs/index.html">
-      <li id="a03">Escacs</li>
-    </a>
-    <a href="S2MP08UF1a04_JimenezA_responsive/index.html">
-      <li id="a04">Responsive</li>
-    </a>
+      <a  href="S2MP08UF1a00_JimenezA_inici/horari.html">
+        <div class="fonsanimat">
+        <li id="a00">Inici</li>
+        </div>
+      </a>
+
+      <a  href="S2MP08UF1a01_JimenezA_feedly/index.html">
+        <div class="fonsanimat">
+          <li id="a01">Feedly</li>
+        </div>
+      </a>
+
+      <a href="S2MP08UF1a02_JimenezA_floats/float.html">
+        <div class="fonsanimat">
+          <li id="a02a" >Floats</li>
+        </div>
+      </a>
+
+      <a href="S2MP08UF1a02_JimenezA_floats/float2.html">
+        <div class="fonsanimat">
+          <li id="a02b">Floats2</li>
+        </div>
+      </a>
+
+      <a href="S2MP08UF1a02_JimenezA_floats/float3.html">
+        <div class="fonsanimat">
+          <li id="a02c">Floats3</li>
+        </div>
+      </a>
+
+      <a href="S2MP08UF1a03_JimenezA_escacs/index.html">
+        <div class="fonsanimat">
+          <li id="a03">Escacs</li>
+        </div>
+      </a>
+
+      <a href="S2MP08UF1a04_JimenezA_responsive/index.html">
+        <div class="fonsanimat">
+          <li id="a04">Responsive</li>
+        </div>
+      </a>
 
 
-    <a href="S2MP08UF1b01_JimenezA_banner/index.html">
-      <li id="b01">Banner</li>
-    </a>
-    <a href="S2MP08UF1b02_JimenezA_bus/index.html">
-      <li id="b02">Bus</li>
-    </a>
-    <a href="S2MP08UF1b03_JimenezA_cotxes/index.html">
-      <li id="b03">Cotxes</li>
-    </a>
-    <a href="S2MP08UF1b04_JimenezA_vambes/index.html">
-      <li id="b04">Vambes</li>
-    </a>
-    <a href="S2MP08UF1b05_JimenezA_diapos/index.html">
-      <li id="b05">Diapos</li>
-    </a>
-    <a href="S2MP08UF1b06_JimenezA_diapos2/index.html">
-      <li id="b06">Diapos2</li>
-    </a>
-    <a href="S2MP08UF1b07_JimenezA_inici/index.html">
-      <li id="b07">Octavo</li>
-    </a>
+
+      <a href="S2MP08UF1b01_JimenezA_banner/index.html">
+        <div class="fonsanimat">
+          <li id="b01">Banner</li>
+        </div>
+      </a>
+
+      <a href="S2MP08UF1b02_JimenezA_bus/index.html">
+        <div class="fonsanimat">
+          <li id="b02">Bus</li>
+        </div>
+      </a>
+
+      <a href="S2MP08UF1b03_JimenezA_cotxes/index.html">
+        <div class="fonsanimat">
+          <li id="b03">Cotxes</li>
+        </div>
+      </a>
+
+      <a href="S2MP08UF1b04_JimenezA_vambes/index.html">
+        <div class="fonsanimat">
+          <li id="b04">Vambes</li>
+        </div>
+      </a>
+
+      <a href="S2MP08UF1b05_JimenezA_diapos/index.html">
+        <div class="fonsanimat">
+          <li id="b05">Diapos</li>
+        </div>
+      </a>
+
+      <a href="S2MP08UF1b06_JimenezA_diapos2/index.html">
+        <div class="fonsanimat">
+          <li id="b06">Diapos2</li>
+        </div>
+      </a>
+
+      <a href="S2MP08UF1b07_JimenezA_inici/index.html">
+        <div class="fonsanimat">
+          <li id="b07" >Octavo</li>
+        </div>
+      </a>
+
+    </ul>
 
   </body>
+
 </html>
