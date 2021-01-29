@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style type="text/css">
+    
+      .cap{
+        position: relative;
+        height: 24rem;
+        width: 20rem;
+        margin-left:auto;
+        margin-right: auto;
+        margin-top:1rem;
+      }
+
+
+      .cabell{
+        position: absolute;
+        height: 36rem;
+        width: 24rem;
+        border-radius: 45% 45% 7% 7%;
+        background-color: #432D21;
+      }
+
+
+        .cara{
+        height: 24rem;
+        width: 18.5rem;
+        background-color: #F5CBB6;
+        border-radius: 30% 30% 50% 50% ;
+        transform: translateX(2.5rem) translateY(3rem);
+      }
+
+
+      .front{
+        height: 13.5rem;
+        width: 4rem;
+        background-color: #432D21;
+        transform: translateX(-5.7rem) rotate(60deg) translateY(-9.9rem);
+        border-radius: 40% 0 0% 70%;
+      }
+
+
+      .front::before{
+        content:"";
+        display:block;
+        height: 12.5rem;
+        width: 4.7rem;
+        background-color: blue;
+        transform: translateX(-7.6rem) rotate(60deg) translateY(-14.5rem);
+        border-radius: 50% 0 0% 50%;
+        position:absolut;
+        background-color: #432D21;
+      }
+
+
+      .celles{
+        height: 3.5rem;
+        width: 6.2rem;
+        background-color: ;
+        transform:translateY(-6rem) translateX(1rem);
+        border-radius: 50% 30% 75% 20%;
+        border-width: 1rem 0 0 0;
+        border-style:solid;
+        border-color:#432D21;
+      }
+
+
+      .celles::before{
+        content:"";
+        display:block;
+        height: 3.5rem;
+        width: 6.2rem;
+        background-color: ;
+        transform:translateY(-1rem) translateX(10rem);
+        border-radius: 20% 50% 30% 75%;
+        border-width: 1rem 0 0 0;
+        border-style:solid;
+        border-color:#432D21;
+      }
+
+
+      .ulleres{
+        transform:translateX(0rem) translateY(-10.55rem);
+      }
+
+
+      #lente2{
+        box-shadow: 0.2rem 0.rem #ECB69B ;
+        border-radius: 40% 40% 50% 45%;;
+        transform:translateX(10rem);
+      }
+
+
+      .lente{
+        position: absolute;
+        transform: translateX(1rem);
+        width:6.7rem;
+        height:5.6rem;
+        background-color: transparent;
+        margin:auto;
+        margin-top: 0.4rem;
+        border-color: rgb(50% 10% 20%) rgb(50% 10% 20%) rgb(50% 10% 20%) rgb(50% 10% 20%);
+        border-width: 0.55rem 0.25rem 0.25rem 0.25rem;
+        box-shadow: 0.1rem 0.2rem #ECB69B ;
+        border-style: solid;
+        border-radius: 40% 40% 50% 45%;
+      }
+
+
+      .pal{
+        width:2.5rem;
+        height:1.2rem;
+        background-color:transparent;
+        transform:translateX(7.8rem) translateY(4.25rem);
+        border-radius: 40% 40% 50% 45%;
+        border-color: rgb(50% 10% 20%);
+        border-width: 0.3rem 0rem 0rem 0rem;
+        border-style: solid;
+        margin-bottom:-1rem;
+      }
+
+
+      .ulls{
+        height: 2rem;
+        width: 2rem;
+        border-radius: 50%;
+        float: left;
+      }
+
+
+      .boca{
+        margin:9rem;
+        transform: scale(0.5, 0.6) translateY(-42rem) translateX(1.5rem);
+      }
+
+
+      .superior{
+        width: 40px;
+        height: 105px;
+        transform: skew(10deg, 10deg);
+        background-color: #ffb1a7;
+        border-radius:20% 80% 0% 90%;
+        transform:rotate(-70deg);
+      }
+
+
+      .superior::before{
+        content:"";
+        display:block;
+        width:40px;
+        height:105px;
+        border-radius:20% 80% 0% 90%;
+        background-color: #ffb1a7;
+        margin:auto;
+        margin-top: 0.4rem;
+        transform: scaleY(-1) rotate(35deg) translateY(5.5rem) translateX(1.5rem);
+        filter: FlipV;
+      }
+
+
+      .inferior{
+        height:40px;
+        width:100px;
+        background-color:#ffb1a7;
+        border-radius: 0% 0% 100% 0%;
+        transform:translateX(-1.5rem)     translateY(-3.3rem);
+      }
+
+
+      .inferior::before{
+        content:"";
+        display:block;
+        width:100px;
+        height:40px;
+        background-color: #ffb1a7;
+        border-radius: 0% 0% 00% 100%;
+        filter: FlipV;
+        transform:translateX(-6.2rem);
+      }
+
+
+      #ull1{
+        margin-left:200px;
+        background-color:white;
+        height:5.5rem;
+        width:5.5rem;
+        border-radius: 6% 96% 6% 100%;
+        transform: scale(0.58, 0.55) translateX(-2.5rem) translateY(-18.5rem) rotate(-45deg);
+        box-shadow: 0.3rem -0.4rem #ECB69B;
+      }
+
+
+      #ull1::before{
+        content:"";
+        display:block;
+        background-color:#492F22;
+        height:3.5rem;
+        width:3.5rem;
+        border-radius: 100%;
+        transform:translateY(0.9rem) translateX(1rem);
+      }
+
+
+      #ull2{
+        margin-left:200px;
+        background-color:white;
+        height:5.5rem;
+        width:5.5rem;
+        border-radius: 6% 96% 6% 100%;
+        transform: scale(0.58, 0.55) translateX(-18rem) translateY(-28.5rem) rotate(-45deg);
+        box-shadow: 0.3rem -0.4rem #ECB69B;
+      }
+
+
+      #ull2::before{
+       content:"";
+        display:block;
+        background-color:#492F22;
+        height:3.5rem;
+        width:3.5rem;
+        border-radius: 100%;
+        transform:translateY(0.9rem) translateX(1rem);
+      }
+
+
+      #ull1:hover{
+        background-color:#ECB69B;
+        box-shadow: 0.3rem -0.4rem #F5CBB6;
+      }
+
+
+      #ull2:hover{
+        background-color:#ECB69B;
+        box-shadow: 0.3rem -0.4rem #F5CBB6;
+      }
+
+
+      #ull1:hover::before{
+        background-color:#ECB69B;
+      }
+
+
+      #ull2:hover::before{
+        background-color:#ECB69B;
+      }
+
+
+      .nas{
+        width:3rem;
+        height:2.5rem;
+        background-color:none;
+        transform:translateX(7.7rem) translateY(-15rem);
+        border-radius:50%;
+        opacity:0.6;
+        border-color: transparent transparent #ffb1a7;
+        border-width: 0px 1px 5px;
+        border-style: solid;
+      }
+
+
+      .nas::before{
+        content:"";
+        display:block;
+        width:1.5rem;
+        height:2.5rem;
+        background-color:ble;
+        transform:translateX(0.8rem) translateY(-2.1rem);
+        opacity:1;
+        border-color:#ffb1a7;
+        border-width: 0 0 0 0.2rem;
+        border-style:solid ;
+      }
+
+    </style>
+  </head>
+
+
+  <body>
+    <div class="cap">
+     <div class="cabell">
+       <div class="f1">
+         <div class="f2">
+     </div>
+     <div class="cara">
+       <div class="front"></div>
+       <div class="celles"></div>
+       <div class="ulleres">
+         <div class="lente" id="lente1"></div>
+         <div class="lente" id="lente2"></div>
+         <div class="pal"></div>
+       </div>
+       <div class="ull" id="ull1"></div>
+       <div class="ull" id="ull2"></div>
+       <div class="nas"></div>
+       <div class="boca">
+           <div class="superior"></div>
+          <div class="inferior"></div>
+       </div>
+
+  </body>
+</html>
