@@ -26,18 +26,19 @@
 
     <style media="screen">
 
-    @font-face {
-    font-family: 'Bebas Kai';
-    src: url('BebasKai.eot');
-    src: url('Bebaskai.eot') format('embedded-opentype'),
-        url('Bebaskai.woff2') format('woff2'),
-        url('Bebaskai.woff') format('woff'),
-        url('bebaskai.ttf') format('truetype'),
-        url('Bebaskai.svg') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
+
+  @font-face {
+      font-family: 'Bebas Kai';
+      src: url('BebasKai.eot');
+      src: url('BebasKai.eot?#iefix') format('embedded-opentype'),
+          url('BebasKai.woff2') format('woff2'),
+          url('BebasKai.woff') format('woff'),
+          url('BebasKai.ttf') format('truetype'),
+          url('BebasKai.svg#BebasKai') format('svg');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+  }
 
       body {
         font-family: 'Exo', sans-serif;
@@ -135,8 +136,7 @@
         font-weight:lighter;
         margin-top: 2rem;
         text-shadow: 5px 0 #3aafa9;
-        font-family:bebaskai;
-      }
+        font-family: 'Bebas Kai';      }
 
 
       h2{
