@@ -1,0 +1,171 @@
+html{
+  background-color: #222;
+  font-family: helvetica;
+}
+body{
+  margin:0 0;
+  margin-top: 0;
+}
+
+b{
+  width: 175px;
+  height: auto;
+  border-radius: 5px;
+  margin-right: 20px;
+  float: left;
+  z-index: 2;
+}
+
+.cap{
+  height: 50px;
+  width: 100%;
+  color: #CCC;
+  text-decoration: none;
+  background-color: black;
+  position: fixed;
+  margin-left: -0.5rem;
+  opacity: 0.5;
+  margin-top: 0;
+  z-index: 3;
+}
+
+.cap:hover{
+  opacity: 1;
+}
+
+a :hover{
+  color: #FFF;
+  text-decoration: underline;
+}
+
+ul{
+float: left;
+text-decoration: none;
+color: #CCC;
+}
+
+li{
+  text-decoration: none;
+  list-style: none;
+}
+
+.xarxa{
+  float: right;
+}
+
+.xarxa:hover{
+  text-decoration: underline;
+}
+
+.logo{
+  width: 49px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-right: 0px;
+  margin-left: 20px;
+  float: left;
+}
+
+#social{
+  margin-left: 82%;
+  margin-top: -2rem;
+}
+
+a{
+  text-decoration: none;
+  color: #CCC;
+  margin-right: 20px;
+  float: left;
+}
+
+h2{
+  font-size: 14px;
+  color: #CCC;
+}
+
+h1{
+  font-size: 22px;
+  color: #FFF;
+  text-align: left;
+  clear: both;
+}
+
+h4 {
+  font-size: 11px;
+  color: #CCC;
+
+  text-align: right;
+  float: right;
+}
+h3 {
+  font-size: 11px;
+  color: #CCC;
+  text-align: left;
+  float: left;
+}
+
+img{
+  width: 175px;
+  height: auto;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+img :hover{
+  opacity: 0.5;
+}
+
+.visto{
+  filter: grayscale(100%);
+}
+
+#espai{
+  padding-top: 70px;
+}
+
+@media only screen and (max-width: 640px) {
+  h2{
+    font-size: 0.875rem;
+  }
+
+  h1{
+    font-size: 1.375rem;
+  }
+
+
+  h4 {
+    font-size: 0.6875rem;
+  }
+
+  h3 {
+    font-size: 0.6875rem;
+    width: 43%;
+    height: auto;
+    border-radius: 0.3125rem;
+    margin-right: 20px;
+    }
+
+  .cap{
+    height: 50px;
+  }
+
+  .logo{
+    width: 3.0625rem;
+    margin-top: 0.3125rem;
+    margin-bottom: 0.3125rem;
+    margin-right: 2,5rem;
+    margin-left: 0.625rem;
+  }
+
+  #social{
+    margin-left: 60%;
+    margin-top: -2rem;
+  }
+
+  a{
+    margin-right: 0.3125rem;
+  }
+
+  html{
+      background-color: white;
+  }

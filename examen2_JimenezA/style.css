@@ -1,0 +1,120 @@
+body{
+  background-image: url(img/fons.jpg);
+
+}
+#contenidor{
+  width: 960px;
+  margin:0 auto;
+  perspective:900px;
+  transform-style: preserve-3d;
+  transform-origin: left;
+}
+
+h1{
+  margin:0 auto;
+  font-size: 4em;
+  font-family: arial;
+}
+
+img{
+  width: 300px;
+}
+
+b{
+  text-decoration: none;
+  color:grey;
+}
+
+#inici{
+  margin:0 auto;
+  height:589px;
+  margin-left:38%;
+}
+
+.cotxes{
+  background-color: white;
+  margin-bottom: 20px;
+  margin-left: 5px;
+  margin-right:5px;
+  height: 240px;
+  width: 300px;
+  opacity: 50%
+
+}
+.cotxes{float: left;
+transform-origin: left;}
+
+p{
+  font-size: 1em;
+  line-height: 1em;
+  font-family:helvetica;
+  margin-top:0.4em;
+  margin-left:0.4em;
+  color: grey;
+}
+
+#footer{
+  margin-left:32%;
+}
+
+.cotxes:hover{
+  opacity: 100%;
+  transform: rotateY(25deg);
+}
+
+@media only screen and (max-width: 940px) {
+  .cotxes{clear:both;
+    margin-left:33%}
+  .div{clear:both;
+    margin-left:33%}
+  #footer{
+    clear:both;
+    margin-left:33%;
+  }
+  #contenidor{
+    clear:both;
+    margin-left:33%;
+  }
+}
+
+#animacio{
+    width: 940px;
+    height: 589px;
+    background-size: auto;
+    animation: cotxesanimat 20s infinite;
+    margin-left: -40%;
+    margin-top: -15%
+ }
+
+@keyframes cotxesanimat {
+     0%{
+       background-image: url(img/ani/back.png);
+     }
+     11.11% {
+       background-image: url(img/ani/bean.png);
+     }
+     22.22% {
+       background-image: url(img/ani/bond.png);
+     }
+     33.33% {
+       background-image: url(img/ani/break.png);
+     }
+     44.44% {
+       background-image: url(img/ani/ghost.png);
+     }
+     55.55% {
+       background-image: url(img/ani/pulp.png);
+     }
+     66.66% {
+       background-image: url(img/ani/rider.png);
+     }
+     77.77% {
+       background-image: url(img/ani/taxi.png);
+     }
+     88.88% {
+       background-image: url(img/ani/team.png);
+     }
+     100% {
+       background-image: url(img/ani/back.png);
+     }
+}
