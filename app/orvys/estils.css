@@ -61,51 +61,134 @@ body{
 .subconjunt {
   display: inline-block;
   margin-top: 0.5vh;
+  color:black;
+  line-height: 10vw;
+  border-bottom: 0.2px solid white;
+  height: 22vw;
+  margin-bottom: 2vw;
+  padding-bottom: 1vw;
 }
 
 .foto_sub {
   height: 20vw;
   width: 20vw;
   background: yellowgreen;
-  opacity: 0.5;
+  opacity: 1;
   float: left;
+  border-radius: 50%;
+  margin-left: 3vw;
+  margin-top: 1vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .grups_sub {
   height: 10vw;
-  width: 60vw;
-  background: red;
+  width: 54vw;
   float: left;
+  font-weight: bold;
+  text-align: left;
+  margin-left: 3vw;
+  line-height: 14vw;
+  margin-top: 1vw;
 }
 .notificacions_sub {
-  height: 10vw;
-  width: 20vw;
-  background: yellow;
+  height: 8vw;
+  width: 8vw;
+  background: #1086A7;
   float: left;
+  text-align: center;
+  margin-left: 6vw;
+  margin-right: 6vw;
+  border-radius: 5vw;
+  line-height: 8vw;
+  margin-top: 3vw;
+  color: white;
 }
+
+
+
+
 .descripcio_sub {
   height: 10vw;
-  width: 60vw;
-  background: blue;
+  width: 54vw;
   float: left;
+  margin-left: 3vw;
+
 }
 .hora_sub {
   height: 10vw;
   width: 20vw;
-  background: pink;
   float: left;
+  text-align:center;
+
 }
 
 .newhome{
   height: 100vh;
   margin: 0 0;
-  padding-top: 3rem;
+  padding-top: 4rem;
   padding-bottom: 3rem;
 }
 
 #xat_fixat{
-
+position: fixed;
+background-color: #95C8D8;
+margin: 0;
 }
+
+#xat_2{
+  margin-top: 24vw;
+}
+
+#f1{
+  background-image: url(img/associacio/Cram.png);
+}
+
+#f2{
+  background-image: url(img/associacio/Ecobrion.png);
+}
+
+#f3{
+  background-image: url(img/persona/u4.jpg);
+}
+
+#f4{
+  background-image: url(img/fons/arbre.jpg);
+}
+
+#f5{
+  background-image: url(img/feminisme.jpg);
+}
+
+#f6{
+  background-image: url(img/associacio/igualdad.jpg);
+}
+
+#f7{
+  background-image: url(img/persona/u7.jpg);
+}
+
+#f8{
+  background-image: url(img/fam.png);
+}
+
+#f9{
+  background-image: url(img/fons/mar.jpg);
+}
+
+#f10{
+  background-image: url(img/fons/ovelles.jpg);
+}
+
+#sub10{
+  padding-bottom: 12vw;
+}
+
+
+
+
 /*FINAL HOME2 */
 
 
@@ -373,20 +456,20 @@ content:"";
 }
 
 .imatge_barra_xat{
-  height: 5rem;
-  width: 5rem;
-  border-radius: 5rem;
+  height: 20vw;
+  width: 20vw;
+  border-radius: 20vw;
   background-color: ;
   background-image: url(img/fons/desierto.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  margin-left: 15%;
+  margin-left: 20vw;
   margin-top:1rem;
 }
 
 .nom_barra_xat{
-  margin-left:0%;
-  margin-top: -2rem;
+  margin-left:10vw;
+  margin-top: -6vw;
   font-family: 'Roboto';
   font-weight: bold;
   width: 100%;
@@ -1232,13 +1315,21 @@ input[type=checkbox] {
 }
 
   .bus_1{
-  width: 110vw;
-  margin: 0 0;
-  margin-top:-5vh;
-  background-color: red;
-  margin-left: 0vw;
+  width: 100vw;
+  margin: 0 auto;;
+  margin-top:0vh;
+  background-color:transparent ;
+
 }
 
+
+.bus_3{
+width: 100vw;
+margin: 0 auto;;
+margin-top:-10vh;
+background-color:transparent ;
+
+}
 
   .ambits{
     height: 35vw;
@@ -1408,20 +1499,24 @@ input[type=checkbox] {
 .bus_2{
 width: 100vw;
 margin: 0 0;
-margin-top:-5vh;
+margin-top:-7vh;
 margin-left: 0vw;
 }
 
 .buscador{
   height: 100vh;
-  width: 100vw;
+  width: 90vw;
   color: white;
-  margin-top: 10rem;
+  margin-top: 6rem;
   margin-bottom: 2rem;
   margin-bottom: 10vh;
-  margin-left: 0;
+  margin-left: 8vw;
   margin-right: 0;
 
+}
+
+#buscador_grups{
+  margin-left:0vw;
 }
 
 .grups{
@@ -1430,7 +1525,7 @@ margin-left: 0vw;
   background-color: white;
   float: left;
   border-radius: 50%;
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
   margin-left: 10vw;
   margin-top: 2vw;
 }
@@ -1537,6 +1632,8 @@ margin-left: 0vw;
   background-color: transparent;ç
   height: 2vw;
   }
+
+
 
 /*final bscador grups*/
 
@@ -1676,4 +1773,42 @@ i{
   margin: 0;
   margin-top: -110vh;
   margin-left: 0vw;
+}
+
+
+
+/*lupa buscadors */
+#buscador_menu2{
+  height: 10vw;
+  width: 80vw;
+  background-color: #1E3F43;
+  border-radius: 3rem;
+  transform: translateY(20vw) translateX(-5vw);
+  margin-left: 15vw;
+}
+
+#buscador_menu2::before{
+  content:"";
+  display:block;
+  height: 8vw;
+  width: 70vw;
+  background-color:#DADADA;
+  position:relative;
+  border-radius: 2rem;
+  margin-left: 9vw;
+  margin-top: 3vw;
+  transform: translateY(1vw);
+}
+
+.buscador_lupa input[type=text]{
+
+  background-color:transparent;
+  height: 8vw;
+  width:70vw;
+  border-radius:3rem;
+  margin-top:10.5vw;
+  transform: translateX(19vw);
+
+
+  border:0px;
 }
